@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+body {
+  background: #f3f4f5;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .container {
+  width: 400px;
+  height: 240px;
+  background: #fff;
+  box-shadow: 0px 32px 64px rgba(47,61,67,0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 44px;
+  border-radius: 6px;
+  z-index: 2;
+}
+body .container .switcherOne,
+body .container .switcherTwo,
+body .container .switcherThree {
+  height: 54px;
+  width: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  color: #34393e;
+  font-family: "SF UI Display", "Arial", sans-serif;
+}
+body .container .switcherTwo {
+  border-top: 1px solid rgba(47,61,67,0.1);
+  border-bottom: 1px solid rgba(47,61,67,0.1);
+}
+.title {
+  width: 100px;
+}
+.control {
+  width: 50px;
+  height: 30px;
+  background: #d6d9dd;
+  border-radius: 15px;
+}
+.control:hover {
+  cursor: pointer;
+}
+.circle {
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 22px;
+}
+.bgOn {
+  background: #44db5e;
+}
+.circleOn {
+  margin-left: 2px;
+}
+.whiteBg {
+  width: 100vw;
+  height: 50%;
+  position: absolute;
+  background: #fff;
+  z-index: 0;
+  top: 0;
+}
+.oracle {
+  z-index: 1;
+  position: absolute;
+  font-size: 500px;
+  width: 100%;
+  bottom: 0;
+  line-height: 500px;
+  margin-bottom: -80px;
+  color: #f3f4f5;
+  text-align: center;
+}

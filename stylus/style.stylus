@@ -1,0 +1,82 @@
+separatorColor = rgba(47, 61, 67, .1)
+switcherBg = #D6D9DD
+green = #44DB5E
+bgColor = #f3f4f5
+*
+  box-sizing border-box
+  transition all .5s ease
+
+
+body
+  background bgColor
+  width 100vw
+  height 100vh
+  display flex
+  justify-content center
+  align-items center
+  .container
+    width 400px
+    height 240px
+    background #fff
+    box-shadow 0px 32px 64px rgba(47, 61, 67, .05)
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    padding 0 44px
+    border-radius 6px
+    z-index 2
+    .switcherOne, .switcherTwo, .switcherThree
+      height 54px
+      width 100%
+      background #fff
+      display flex
+      justify-content space-between
+      align-items center
+      font-size 20px
+      color #34393E
+      font-family "SF UI Display", "Arial", sans-serif
+    .switcherTwo
+      border-top 1px solid separatorColor
+      border-bottom 1px solid separatorColor
+.title
+  width 100px
+.control
+  width 50px
+  height 30px
+  background switcherBg
+  border-radius 15px
+  &:hover
+    cursor pointer
+.circle
+  width 26px
+  height 26px
+  background #fff
+  border-radius 50%
+  position absolute
+  margin-top 2px
+  margin-left 22px
+.bgOn
+  background green
+.circleOn
+  margin-left 2px
+  
+.whiteBg
+  width 100vw
+  height 50%
+  position absolute
+  background white
+  z-index 0
+  top 0
+.oracle
+  z-index 1
+  position absolute
+  font-size 500px
+  width 100%
+  bottom 0
+  line-height 500px
+  margin-bottom -80px
+  color bgColor
+  text-align center
+  
+      

@@ -107,4 +107,5 @@ body .container .switcherTwo {
   margin-bottom: -80px;
   color: #f3f4f5;
   text-align: center;
+  -webkit-user-select: none;
 }

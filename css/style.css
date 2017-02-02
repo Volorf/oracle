@@ -81,13 +81,13 @@ body .container .switcherTwo {
   border-radius: 50%;
   position: absolute;
   margin-top: 2px;
-  margin-left: 22px;
+  margin-left: 2px;
 }
 .bgOn {
   background: #44db5e;
 }
 .circleOn {
-  margin-left: 2px;
+  margin-left: 22px;
 }
 .whiteBg {
   width: 100vw;

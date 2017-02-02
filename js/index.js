@@ -23,6 +23,8 @@ class ChangeSwitcher {
     }
  } 
 
+
+
 $(document).ready(function() {
   
   var switcherOne = $(".switcherOne .control")
@@ -35,26 +37,40 @@ $(document).ready(function() {
   
   switcherOne.on("click", function() {
     changeSwitcherOne.change() 
+    removeTremor()
     if (changeSwitcherTwo.currentState() == true && changeSwitcherThree.currentState() == true ) {
       changeSwitcherTwo.changeUI(false)
       changeSwitcherThree.changeUI(false)
+      addTremor()
     }
   })
   
   switcherTwo.on("click", function() {
     changeSwitcherTwo.change()
+    removeTremor()
     if (changeSwitcherOne.currentState() == true && changeSwitcherThree.currentState() == true) {
       changeSwitcherOne.changeUI(false)
       changeSwitcherThree.changeUI(false)
+      addTremor()
     }
   })
   
   switcherThree.on("click", function() {
     changeSwitcherThree.change()
+    removeTremor()
     if (changeSwitcherOne.currentState() == true && changeSwitcherTwo.currentState() == true) {
         changeSwitcherOne.changeUI(false)
         changeSwitcherTwo.changeUI(false)
+        addTremor()
     }
   }) 
+  
+  function addTremor() {
+    $(".container").addClass("windowTremor")
+  }
+  
+  function removeTremor() {
+    $(".container").removeClass("windowTremor")
+  }
   
 })

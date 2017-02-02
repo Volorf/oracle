@@ -8,7 +8,6 @@ class ChangeSwitcher {
       this.changeUI(this.state)
     }
     changeUI (state) {
-      // console.log(state)
       if (state == true) {
         this.switcher.addClass("bgOn")
         this.switcher.children().addClass("circleOn")

@@ -96,6 +96,7 @@ body .container .switcherTwo {
   background: #fff;
   z-index: 0;
   top: 0;
+  left: 0;
 }
 .oracle {
   z-index: 1;
@@ -122,6 +123,7 @@ body .container .switcherTwo {
   margin-bottom: 11px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  text-align: center;
 }
 .aboutMe:hover {
   opacity: 1;

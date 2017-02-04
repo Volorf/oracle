@@ -73,6 +73,7 @@ body
   background white
   z-index 0
   top 0
+  left 0
 .oracle
   z-index 1
   position absolute
@@ -97,6 +98,7 @@ body
   margin-bottom 11px
   text-transform uppercase
   letter-spacing 1.5px
+  text-align center
   &:hover
     opacity 1
     

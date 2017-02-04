@@ -84,6 +84,7 @@ body
   color bgColor
   opacity .1
   text-align center
+  margin-left -24px
   -webkit-user-select none
 .aboutMe
   color white
@@ -114,4 +115,10 @@ body
   100%
     margin-left 0px
   
-      
+@media (max-width: 640px)
+  .whiteBg
+    display none
+  body .container
+    width 320px
+    padding 0 24px
+    height 210px
